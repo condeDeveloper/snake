@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Snake</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="hud">
+      <div><span class="label">Pontos</span><strong id="score">0</strong></div>
+      <div><span class="label">Recorde</span><strong id="best">0</strong></div>
+      <div><span class="label">Velocidade</span><strong id="speed">1</strong></div>
+    </header>
+
+    <section class="stage">
+      <canvas id="game" width="480" height="480"></canvas>
+      <div id="overlay" class="overlay">
+        <h1>SNAKE</h1>
+        <p>Setas ou <kbd>WASD</kbd> para mover · <kbd>Espaço</kbd> pausa</p>
+        <p class="cta">Toque ou pressione uma tecla para começar</p>
+      </div>
+    </section>
+
+    <nav class="dpad" id="dpad">
+      <button data-dir="up">▲</button>
+      <button data-dir="left">◀</button>
+      <button data-dir="down">▼</button>
+      <button data-dir="right">▶</button>
+    </nav>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/snake.js"></script>
+  <script src="js/food.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
